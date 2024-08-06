@@ -10,9 +10,9 @@ updates:
     schedule:
       interval: "daily"
       time: "09:00"
-      timezone: "America/New_York"
+      timezone: "Europe/Brussels"
     commit-message: 
       prefix: "chore: "
       include: "scope"
     reviewers:
-      - "osfanbuff63" # IMPORTANT: change to your username so you don't request me :P
+      - "" # IMPORTANT: change to your username so you don't request me :P

@@ -22,15 +22,15 @@ jobs:
       # Clones repository so it has access to the files
       - name: Checkout repo
         uses: actions/checkout@v4
-      # Checks mcfunction files for errors
-      - name: Check commands
-        uses: mcbeet/check-commands@v1
-        with:
-          source: .
-          minecraft: "1.20"
-      # Checks JSON for errors
-      - name: Check JSON
-        uses: ocular-d/json-linter@0.0.2
+      # # Checks mcfunction files for errors  | disabled because vscode does this
+      # - name: Check commands
+      #   uses: mcbeet/check-commands@v1
+      #   with:
+      #     source: .
+      #     minecraft: "1.20"
+      # # Checks JSON for errors
+      # - name: Check JSON
+      #   uses: ocular-d/json-linter@0.0.2
       # Uploads an artifact that you can download and use in your Minecraft world
       - name: Compile and upload
         uses: actions/upload-artifact@v4
@@ -42,18 +42,18 @@ jobs:
                pack.png
        # Errors if files aren't found
           if-no-files-found: error
-  build-packsquash:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-      - name: Run PackSquash
-        uses: ComunidadAylas/PackSquash-action@v4
-        with:
-          artifact_name: '[UNZIP ME] your-datapack v1'
-          packsquash_version: latest
-          options: |
-            pack_directory = '.'
-            allow_mods = ['OptiFine']
+  # build-packsquash:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Checkout repo
+  #       uses: actions/checkout@v4
+  #       with:
+  #         fetch-depth: 0
+  #     - name: Run PackSquash
+  #       uses: ComunidadAylas/PackSquash-action@v4
+  #       with:
+  #         artifact_name: '[UNZIP ME] your-datapack v1'
+  #         packsquash_version: latest
+  #         options: |
+  #           pack_directory = '.'
+  #           allow_mods = ['OptiFine']
