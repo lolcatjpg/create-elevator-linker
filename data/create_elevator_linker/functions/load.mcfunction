@@ -1,1 +1,0 @@
-# add scoreboard objectives here.
