@@ -6,20 +6,60 @@ executions:
     dst:
       node: gh-checkout
       port: exec
-connections: []
+  - src:
+      node: gh-start
+      port: exec-on-workflow_run
+    dst:
+      node: gh-checkout
+      port: exec
+  - src:
+      node: gh-checkout
+      port: exec
+    dst:
+      node: gh-actions-upload-artifact-purple-blackberry-shark
+      port: exec
+connections:
+  - src:
+      node: run-v1-orange-lion-squirrel
+      port: output
+    dst:
+      node: gh-actions-upload-artifact-purple-blackberry-shark
+      port: path
 nodes:
   - id: gh-start
     type: gh-start@v1
     position:
-      x: 10
-      y: 10
+      x: 50
+      y: 30
     settings:
       folded: false
   - id: gh-checkout
     type: github.com/actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11
     position:
-      x: 660
-      y: 100
+      x: 560
+      y: 300
+    settings:
+      folded: false
+  - id: gh-actions-upload-artifact-purple-blackberry-shark
+    type: >-
+      github.com/actions/upload-artifact@834a144ee995460fba8ed112a2fc961b36a5ec5a
+    position:
+      x: 1410
+      y: 340
+    inputs:
+      name: create-elevator-linker
+    settings:
+      folded: false
+  - id: run-v1-orange-lion-squirrel
+    type: run@v1
+    position:
+      x: 1020
+      y: 620
+    inputs:
+      script: |-
+        echo data/
+        echo pack.mcmeta
+        echo pack.png
     settings:
       folded: false
 registries: []
