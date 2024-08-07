@@ -16,6 +16,12 @@ executions:
       node: gh-checkout
       port: exec
     dst:
+      node: run-v1-orange-lion-squirrel
+      port: exec
+  - src:
+      node: run-v1-orange-lion-squirrel
+      port: exec-success
+    dst:
       node: gh-actions-upload-artifact-purple-blackberry-shark
       port: exec
 connections:
@@ -44,8 +50,8 @@ nodes:
     type: >-
       github.com/actions/upload-artifact@834a144ee995460fba8ed112a2fc961b36a5ec5a
     position:
-      x: 1410
-      y: 340
+      x: 1480
+      y: 310
     inputs:
       name: create-elevator-linker
     settings:
@@ -53,8 +59,8 @@ nodes:
   - id: run-v1-orange-lion-squirrel
     type: run@v1
     position:
-      x: 1020
-      y: 620
+      x: 1070
+      y: 460
     inputs:
       script: |-
         echo data/
