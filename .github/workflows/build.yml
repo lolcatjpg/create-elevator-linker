@@ -1,11 +1,20 @@
-on: [push]
+name: build
+on: 
+  workflow_dispatch:
 
 jobs:
-    build-and-publish:
+    build:
       runs-on: ubuntu-latest
-      name: My workflow
+      name: build modpack
       steps:
-        - name: Execute Action Graph
-          uses: actionforge/action@5636645834e4a75cbc8c6c204e872ddc27632738 # v0.9.52
+        - name: checkout repo
+          uses: actions/checkout@v4
+        
+        - name: compile and upload
+          uses: actions/upload-artifact@v4
           with:
-            graph_file: build.yml
+            name: create-elevator-linker
+            path: |
+              data/
+              pack.mcmeta
+          if-no-files-found: error
