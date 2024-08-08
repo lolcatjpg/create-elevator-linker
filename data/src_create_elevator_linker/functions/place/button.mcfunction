@@ -1,4 +1,4 @@
-summon armor_stand ~ ~ ~ {Small:true, NoGravity:true, Tags: ["create_elevator_linker.transmitter.button"]}
+summon armor_stand ~ ~ ~ {Small:true, NoGravity:true, Tags: ["create_elevator_linker.transmitter.button", "create_elevator_linker.component"]}
 
 # place button
 execute if data entity @s {Facing: 0b} run setblock ~ ~ ~ minecraft:stone_button[face=ceiling]
