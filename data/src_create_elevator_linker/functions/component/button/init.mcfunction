@@ -10,4 +10,4 @@ scoreboard players operation @e[type=armor_stand, sort=nearest, limit=1, tag=cre
 # success feedback
 tellraw @p [{"text": "button placed", "color": "green"}]
 
-# fail feedback in create_elevator_linker:place/button
+# fail feedback in src:init/button

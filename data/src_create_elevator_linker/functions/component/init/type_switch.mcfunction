@@ -1,0 +1,1 @@
+execute as @e[type=glow_item_frame, tag=create_elevator_linker.init_component.button_transmitter] at @s run function src_create_elevator_linker:component/init/button
