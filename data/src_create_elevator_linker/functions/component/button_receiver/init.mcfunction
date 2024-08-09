@@ -10,6 +10,6 @@ scoreboard players operation @e[type=armor_stand, sort=nearest, limit=1, tag=cre
 scoreboard players operation @e[type=armor_stand, sort=nearest, limit=1, tag=create_elevator_linker.receiver.button] create_elevator_linker.floor = @p create_elevator_linker.placing_floor
 
 # success feedback
-tellraw @p [{"text": "receiver placed", "color": "green"}]
+tellraw @p [{"text": "button receiver placed", "color": "green"}]
 
 # fail feedback in src:init/button

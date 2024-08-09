@@ -1,0 +1,1 @@
+give @s glow_item_frame{EntityTag: {id: glow_item_frame, Item: {id: "minecraft:orange_concrete", Count:1}, Tags: ["create_elevator_linker.init_component.contact_transmitter"]}, display: {Name: '{"text": "↑ elevator contact transmitter", "color": "gold", "italic": false}'}}

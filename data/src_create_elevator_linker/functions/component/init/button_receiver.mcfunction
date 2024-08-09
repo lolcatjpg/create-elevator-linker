@@ -1,5 +1,5 @@
 # fail feedback
-execute if entity @e[type=armor_stand, distance=..1, tag=create_elevator_linker.component] run tellraw @p [{"text": "❌ could not place receiver: there is already a device on this location", "color": "red"}]
+execute if entity @e[type=armor_stand, distance=..1, tag=create_elevator_linker.component] run tellraw @p [{"text": "❌ could not place receiver: there is already an elevator component on this location", "color": "red"}]
 execute if entity @e[type=armor_stand, distance=..1, tag=create_elevator_linker.component] run kill @s
 
 execute if score @p create_elevator_linker.placing_elevator_id matches 0 run tellraw @p [{"text": "❌ you are not currently working on an elevator", "color": "red"}]
