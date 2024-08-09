@@ -1,0 +1,4 @@
+function create_elevator_linker:give/button_transmitter
+function create_elevator_linker:give/button_receiver
+function create_elevator_linker:give/contact_transmitter
+function create_elevator_linker:give/contact_receiver
