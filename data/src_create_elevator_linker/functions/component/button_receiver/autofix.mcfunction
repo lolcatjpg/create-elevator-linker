@@ -1,0 +1,1 @@
+execute as @e[tag=create_elevator_linker.component, tag=create_elevator_linker.receiver.button] at @s unless block ~ ~ ~ create:redstone_link[receiver=true] run function src_create_elevator_linker:component/button_receiver/place_link

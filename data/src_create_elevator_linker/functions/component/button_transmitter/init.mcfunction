@@ -1,3 +1,4 @@
+# executed as item frame at @s
 summon armor_stand ~ ~ ~ {Small:true, NoGravity:true, Tags: ["create_elevator_linker.transmitter.button", "create_elevator_linker.component"], CustomName: '{"text": "button transmitter", "color": "gold"}', CustomNameVisible: true}
 
 # place button
