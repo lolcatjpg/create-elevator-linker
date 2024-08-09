@@ -1,0 +1,2 @@
+scoreboard players enable @a create_elevator_linker.placing_elevator_id
+execute as @a unless score @s create_elevator_linker.placing_elevator_id matches 0 run scoreboard players enable @s create_elevator_linker.placing_floor

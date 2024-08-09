@@ -1,3 +1,5 @@
+function src_create_elevator_linker:enable_triggers
+
 function src_create_elevator_linker:ui/actionbar/activate
 
 function src_create_elevator_linker:visibility/glow
