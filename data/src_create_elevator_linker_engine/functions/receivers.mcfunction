@@ -1,0 +1,4 @@
+execute as @e[tag=create_elevator_linker.receiver.button] at @s if data entity @s {ActiveEffects: [{Amplifier: 2b, ShowParticles: 1b}]} run data merge block ~ ~ ~ {Receive: 1}
+execute as @e[tag=create_elevator_linker.receiver.button] at @s unless data entity @s {ActiveEffects: [{Amplifier: 2b, ShowParticles: 1b}]} run data merge block ~ ~ ~ {Receive: 0}
+execute as @e[tag=create_elevator_linker.receiver.contact] at @s if data entity @s {ActiveEffects: [{Amplifier: 2b, ShowParticles: 1b}]} run data merge block ~ ~ ~ {Receive: 1}
+execute as @e[tag=create_elevator_linker.receiver.contact] at @s unless data entity @s {ActiveEffects: [{Amplifier: 2b, ShowParticles: 1b}]} run data merge block ~ ~ ~ {Receive: 0}
