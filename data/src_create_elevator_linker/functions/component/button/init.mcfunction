@@ -1,4 +1,4 @@
-summon armor_stand ~ ~ ~ {Small:true, NoGravity:true, Tags: ["create_elevator_linker.transmitter.button", "create_elevator_linker.component"]}
+summon armor_stand ~ ~ ~ {Small:true, NoGravity:true, Tags: ["create_elevator_linker.transmitter.button", "create_elevator_linker.component"], CustomName: '{"text": "button transmitter", "color": "gold"}', CustomNameVisible: true}
 
 # place button
 function src_create_elevator_linker:component/button/place_button
