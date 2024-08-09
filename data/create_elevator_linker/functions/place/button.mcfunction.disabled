@@ -4,4 +4,4 @@ execute unless entity @e[type=glow_item_frame, distance=..1, limit=1] run tellra
 execute if score @p create_elevator_linker.placing_elevator_id matches 0 run tellraw @p [{"text": "❌ you are not currently working on an elevator", "color": "red"}]
 
 # create button
-execute at @s align xyz positioned ~.5 ~ ~.5 as @e[type=glow_item_frame, distance=..1, limit=1] unless score @p create_elevator_linker.placing_elevator_id matches 0 unless entity @e[type=armor_stand, distance=..0.5] run function src_create_elevator_linker:component/button/init
+execute at @s align xyz positioned ~.5 ~ ~.5 as @e[type=glow_item_frame, distance=..1, limit=1] unless score @p create_elevator_linker.placing_elevator_id matches 0 unless entity @e[type=armor_stand, distance=..0.5] run function src_create_elevator_linker:component/button_transmitter/init

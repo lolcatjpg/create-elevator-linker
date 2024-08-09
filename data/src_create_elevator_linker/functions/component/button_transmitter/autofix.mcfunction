@@ -1,0 +1,1 @@
+execute as @e[tag=create_elevator_linker.component, tag=create_elevator_linker.transmitter.button] at @s unless block ~ ~ ~ #buttons as @e[type=glow_item_frame, distance=..0.7] run function src_create_elevator_linker:component/button_transmitter/place_button
