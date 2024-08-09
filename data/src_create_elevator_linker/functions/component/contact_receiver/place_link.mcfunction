@@ -1,0 +1,6 @@
+execute if entity @s[x_rotation=90] run setblock ~ ~ ~ create:redstone_link[facing=down, receiver=true]
+execute if entity @s[x_rotation=-90] run setblock ~ ~ ~ create:redstone_link[facing=up, receiver=true]
+execute if entity @s[x_rotation=0, y_rotation=-180] run setblock ~ ~ ~ create:redstone_link[facing=north, receiver=true]
+execute if entity @s[x_rotation=0, y_rotation=0] run setblock ~ ~ ~ create:redstone_link[facing=south, receiver=true]
+execute if entity @s[x_rotation=0, y_rotation=90] run setblock ~ ~ ~ create:redstone_link[facing=west, receiver=true]
+execute if entity @s[x_rotation=0, y_rotation=-90] run setblock ~ ~ ~ create:redstone_link[facing=east, receiver=true]

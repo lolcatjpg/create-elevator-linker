@@ -1,2 +1,3 @@
 execute as @e[type=glow_item_frame, tag=create_elevator_linker.init_component.button_transmitter] at @s run function src_create_elevator_linker:component/init/button_transmitter
 execute as @e[type=glow_item_frame, tag=create_elevator_linker.init_component.button_receiver] at @s run function src_create_elevator_linker:component/init/button_receiver
+execute as @e[type=glow_item_frame, tag=create_elevator_linker.init_component.contact_receiver] at @s run function src_create_elevator_linker:component/init/contact_receiver

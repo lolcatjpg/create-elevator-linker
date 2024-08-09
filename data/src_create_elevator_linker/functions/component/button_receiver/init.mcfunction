@@ -2,7 +2,7 @@
 summon armor_stand ~ ~ ~ {Small:true, NoGravity:true, Tags: ["create_elevator_linker.receiver.button", "create_elevator_linker.component"], CustomName: '{"text": "button receiver", "color": "aqua"}', CustomNameVisible: true}
 execute rotated as @s run tp @e[type=armor_stand, distance=..1, tag=create_elevator_linker.component] ~ ~ ~ ~ ~
 
-# place button
+# place link
 function src_create_elevator_linker:component/button_receiver/place_link
 
 # set scoreboard values from nearest player

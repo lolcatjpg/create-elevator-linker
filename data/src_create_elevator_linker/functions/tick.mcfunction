@@ -8,3 +8,4 @@ function src_create_elevator_linker:visibility/invisible
 function src_create_elevator_linker:component/init/type_switch
 function src_create_elevator_linker:component/button_transmitter/autofix
 function src_create_elevator_linker:component/button_receiver/autofix
+function src_create_elevator_linker:component/contact_receiver/autofix
