@@ -1,7 +1,7 @@
 {
     "pack": {
       "pack_format": 15,
-      "description": "create elevator linker"
+      "description": "create elevator linker: datapack to link create elevators without redstone (for mc 1.20)"
     }
 }
   
