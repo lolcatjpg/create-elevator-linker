@@ -4,6 +4,7 @@ function src_create_elevator_linker:ui/actionbar/activate
 
 function src_create_elevator_linker:visibility/glow
 function src_create_elevator_linker:visibility/invisible
+function src_create_elevator_linker:visibility/highlight_mode_timer_decay
 
 function src_create_elevator_linker:component/init/type_switch
 function src_create_elevator_linker:component/button_transmitter/autofix

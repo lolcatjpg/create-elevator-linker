@@ -11,3 +11,7 @@ scoreboard objectives add create_elevator_linker.placing_floor trigger
 scoreboard objectives add create_elevator_linker.shift_floor trigger
 scoreboard objectives add create_elevator_linker.shift_current_floor trigger
 scoreboard objectives add create_elevator_linker.shift_id trigger
+
+scoreboard objectives add create_elevator_linker.highlight_mode dummy
+scoreboard objectives add create_elevator_linker.highlight_mode_timer_s dummy
+scoreboard objectives add create_elevator_linker.highlight_mode_timer_t dummy

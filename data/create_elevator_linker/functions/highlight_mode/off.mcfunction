@@ -1,0 +1,1 @@
+scoreboard players reset @s create_elevator_linker.highlight_mode
