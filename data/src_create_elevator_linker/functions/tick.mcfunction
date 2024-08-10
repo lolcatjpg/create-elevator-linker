@@ -13,3 +13,7 @@ function src_create_elevator_linker:component/contact_receiver/autofix
 function src_create_elevator_linker_engine:button
 function src_create_elevator_linker_engine:contact
 function src_create_elevator_linker_engine:receivers
+
+function src_create_elevator_linker:shift/floor_detect
+function src_create_elevator_linker:shift/current_floor_detect
+function src_create_elevator_linker:shift/id_detect
