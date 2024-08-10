@@ -1,1 +1,2 @@
-execute as @a unless score @p create_elevator_linker.placing_elevator_id matches 0 run function src_create_elevator_linker:ui/actionbar/title
+execute as @a unless score @s create_elevator_linker.placing_elevator_id matches 0 unless score @s create_elevator_linker.highlight_mode_timer_s matches -2147483648..2147483647 run function src_create_elevator_linker:ui/actionbar/editing
+execute as @a if score @s create_elevator_linker.highlight_mode_timer_s matches -2147483648..2147483647 run function src_create_elevator_linker:ui/actionbar/highlight_mode

@@ -1,0 +1,1 @@
+title @s actionbar ["",{"text":"highlight mode active ","color":"aqua"},{"text":"[","color":"gray"},{"score":{"objective":"create_elevator_linker.highlight_mode_timer_s","name":"*"}},{"text": "s"},{"text":"]","color":"gray"}]
