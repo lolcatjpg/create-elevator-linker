@@ -1,0 +1,1 @@
+scoreboard players remove @s create_elevator_linker.placing_floor 1
