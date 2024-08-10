@@ -1,0 +1,1 @@
+scoreboard objectives add create_elevator_linker.receive_timeout dummy

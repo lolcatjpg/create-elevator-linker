@@ -1,0 +1,1 @@
+scoreboard players remove @e[tag=create_elevator_linker.component, scores={create_elevator_linker.receive_timeout= 1..}] create_elevator_linker.receive_timeout 1
